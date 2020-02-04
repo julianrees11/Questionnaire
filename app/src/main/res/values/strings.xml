@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JuliansQuestionnaire</string>
+    <string name="text_view_title">Please fill out the text boxes to continue.</string>
+    <string name="btn_start">Start Questionnaire</string>
+    <string name="hint_name">Last Name</string>
+    <string name="hint_date">Date(Month/Day/Year)</string>
+    <string name="next">Next Question</string>
+    <string name="hint_answer">Answer here</string>
+    <string name="thank">Thank you for participating in this quiz. Please come back in a couple of weeks to take the test again.</string>
+    <string name="btn_restart">Back to start</string>
+
+</resources>
