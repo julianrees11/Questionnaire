@@ -19,9 +19,10 @@ public class EndScreen extends AppCompatActivity implements View.OnClickListener
         Button restart = findViewById(R.id.btnRestart);
 
         Intent getIntent = new Intent();
+        Intent getIntent2 = new Intent();
 
         String result = getIntent.getStringExtra("STR_ID");
-        ArrayList<String> result2 = getIntent.getStringArrayListExtra("ANSWERS");
+        ArrayList<String> result2 = getIntent2.getStringArrayListExtra("ANSWERS");
         System.out.println(result + result2);
 
         restart.setOnClickListener(this);

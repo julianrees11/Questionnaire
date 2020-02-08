@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     EditText date;
     EditText name;
+    Intent putIntent;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         date = findViewById(R.id.etDate);
         name = findViewById(R.id.etName);
 
+        putIntent = new Intent(MainActivity.this,com.example.juliansquestionnaire.EndScreen.class);
+        intent = new Intent(MainActivity.this,com.example.juliansquestionnaire.MainScreen.class);
 
         btnStart.setOnClickListener(this);
     }
@@ -36,10 +40,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             String id = date.getText().toString() +" "+ name.getText().toString();
 
-            Intent putIntent = new Intent(MainActivity.this,com.example.juliansquestionnaire.EndScreen.class);
             putIntent.putExtra("STR_ID",id);
 
-            Intent intent = new Intent(MainActivity.this,com.example.juliansquestionnaire.MainScreen.class);
             startActivity(intent);
 
         }else Toast.makeText(this, "Please fill out the boxes", Toast.LENGTH_SHORT).show();
